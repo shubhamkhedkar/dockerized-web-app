@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taskboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <header>
+      <h1>Taskboard</h1>
+      <span id="status" class="badge">checking…</span>
+    </header>
+    <p class="sub">Nginx frontend &rarr; Node.js API &rarr; PostgreSQL, wired together with Docker Compose.</p>
+
+    <form id="task-form" autocomplete="off">
+      <input id="title" name="title" maxlength="200" placeholder="Add a task, e.g. Add healthchecks" required>
+      <button type="submit">Add</button>
+    </form>
+
+    <ul id="tasks"></ul>
+    <p id="empty" class="muted" hidden>No tasks yet. Add the first one above.</p>
+
+    <footer class="muted">Served by API container <code id="host">…</code></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

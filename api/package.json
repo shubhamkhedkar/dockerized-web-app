@@ -1,0 +1,17 @@
+{
+  "name": "taskboard-api",
+  "version": "1.0.0",
+  "description": "REST API for the Taskboard multi-service app",
+  "main": "src/server.js",
+  "private": true,
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "pg": "^8.13.1"
+  }
+}
